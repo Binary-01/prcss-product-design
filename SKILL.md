@@ -100,7 +100,9 @@ Follow this decision tree:
    - Identify the phase (ask if ambiguous).
    - Read the matching file in `references/phases/<phase>.md` for intent and method suggestions.
    - Read `templates/action-card-template.md` for the card shape.
-   - If the action is one of the canonical PRCSS* actions (`Brief`, `Objectives`), load `references/actions/<action>.md` verbatim so the description logic is preserved.
+   - The full PRCSS\* **Design Actions library** lives in `references/actions/` (see `references/actions/README.md` for the index by phase). Always load the matching file verbatim so the description logic is preserved — do not paraphrase from memory.
+   - Canonical actions with full verbatim content: `brief.md`, `objectives.md`. All other actions are in the same folder, one file per method (e.g. `personas.md`, `crazy-8.md`, `wireframe.md`, `user-interview.md`, …).
+   - If the user asks for an action that isn't in the library yet, copy `templates/action-card-template.md`, name the new file in kebab-case, and add it to the Design Actions index.
 
 **3. If the user wants a full project plan →**
    - Walk phase by phase, propose 2–4 Design Actions per phase, let the user pick, then output a consolidated Markdown plan.
@@ -117,8 +119,7 @@ Always read the referenced file **before** generating content about the topic �
 - `references/framework-overview.md` — the 7 phases, intents, outputs, loop logic.
 - `references/project-template.md` — literal structure of the main Project page (Project Info, Project Workflow, Design Actions sections).
 - `references/phases/` — one file per phase with purpose, typical actions, and outputs.
-- `references/actions/brief.md` — canonical Brief action, preserved verbatim from the original source.
-- `references/actions/objectives.md` — canonical Objectives action, preserved verbatim from the original source.
+- `references/actions/` — the full Design Actions library, one file per action. Index and usage rules are in `references/actions/README.md`. Canonical Brief and Objectives actions (`brief.md`, `objectives.md`) are preserved verbatim from the original source.
 - `templates/project-skeleton.md` — fill-in-the-blanks Markdown scaffold for a new project.
 - `templates/action-card-template.md` — shape of a Design Action card (Description + Ressource blocks, plus metadata).
 
