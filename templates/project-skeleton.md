@@ -39,51 +39,51 @@ _Replace every `{{PLACEHOLDER}}` with project specifics. This skeleton mirrors t
 
 ## 🚀 Project Workflow
 
-> 💡 The active list of Design Actions for this project, grouped by Phase. Three useful cuts of the same list:
+> 💡 The active list of Design Methods for this project, grouped by Phase. Three useful cuts of the same list:
 > - **Design Phases:** grouped by phase, to see balance across the project.
 > - **Project Roadmap:** laid out on a timeline (`Start` → `Deadline`).
-> - **Design Actions Status:** grouped by status, to track execution.
+> - **Design Methods Status:** grouped by status, to track execution.
 
 ### 🔍 Discover
 - [ ] **✅ Brief** — Status: `{{STATUS}}` — Assign: {{@PERSON}} — Deadline: {{YYYY-MM-DD}}
 - [ ] **Objectives** — Status: `{{STATUS}}` — Assign: {{@PERSON}} — Deadline: {{YYYY-MM-DD}}
-- [ ] {{ACTION_NAME}} — Status: `To do` — Assign: {{@PERSON}} — Deadline: {{YYYY-MM-DD}}
+- [ ] {{METHOD_NAME}} — Status: `To do` — Assign: {{@PERSON}} — Deadline: {{YYYY-MM-DD}}
 
 ### 🎯 Define
-- [ ] {{ACTION_NAME}} — Status: `To do` — …
+- [ ] {{METHOD_NAME}} — Status: `To do` — …
 
 ### 🧠 Ideate
-- [ ] {{ACTION_NAME}} — Status: `To do` — …
+- [ ] {{METHOD_NAME}} — Status: `To do` — …
 
 ### 🧪 Design
-- [ ] {{ACTION_NAME}} — Status: `To do` — …
+- [ ] {{METHOD_NAME}} — Status: `To do` — …
 
 ### 🪄 Test
-- [ ] {{ACTION_NAME}} — Status: `To do` — …
+- [ ] {{METHOD_NAME}} — Status: `To do` — …
 
 ### 📦 Deliver
-- [ ] {{ACTION_NAME}} — Status: `To do` — …
+- [ ] {{METHOD_NAME}} — Status: `To do` — …
 
 ### 📏 Measure
-- [ ] {{ACTION_NAME}} — Status: `To do` — …
+- [ ] {{METHOD_NAME}} — Status: `To do` — …
 
 ---
 
-## 📒 Design Actions (library)
+## 📒 Design Methods (library)
 
-> 💡 Browse common Design Actions and **copy** them into the Project Workflow above, or **create** your own. Also a good place to **learn new methods**.
+> 💡 Browse common Design Methods and **copy** them into the Project Workflow above, or **create** your own. Also a good place to **learn new methods**.
 
 ### Reusable templates
-- 🔍 Brief — see `../references/actions/brief.md`
-- 🔍 Objectives — see `../references/actions/objectives.md`
-- _(Add more library actions here as you collect them — one card per action, shape = `../templates/action-card-template.md`.)_
+- 🔍 Brief — see `../references/methods/brief.md`
+- 🔍 Objectives — see `../references/methods/objectives.md`
+- _(Add more library methods here as you collect them — one card per method, shape = `../templates/method-card-template.md`.)_
 
 ---
 
-## Seeded actions to start with
+## Seeded methods to start with
 
-1. **✅ Brief** — Discover — see `../references/actions/brief.md`.
-2. **Objectives** — Discover — see `../references/actions/objectives.md`.
+1. **✅ Brief** — Discover — see `../references/methods/brief.md`.
+2. **Objectives** — Discover — see `../references/methods/objectives.md`.
 
 ---
 

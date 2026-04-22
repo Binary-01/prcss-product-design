@@ -2,7 +2,7 @@
 
 Faithful Markdown reproduction of the original PRCSS* project page. Preserve this structure when scaffolding a new project.
 
-The page has three sections, separated by horizontal rules: **🕹 Project Info**, **🚀 Project Workflow**, **📒 Design Actions**.
+The page has three sections, separated by horizontal rules: **🕹 Project Info**, **🚀 Project Workflow**, **📒 Design Methods**.
 
 ---
 
@@ -50,18 +50,18 @@ Fill here the objectives of your project.
 > 💡 The **PRCSS\*** template comes with a pre-built Design workflow — feel free to customize it!
 > - **Design Phases view:** lets you kickstart your project.
 > - **Project Roadmap view:** plan, follow, and get the big view.
-> - **Design Actions Status:** assign and track your project.
+> - **Design Methods Status:** assign and track your project.
 
-**Content:** the active list of Design Actions for this project, grouped by Phase. See `../templates/action-card-template.md` for the shape of each action card.
+**Content:** the active list of Design Methods for this project, grouped by Phase. See `../templates/method-card-template.md` for the shape of each method card.
 
 ---
 
-## 📒 Design Actions
+## 📒 Design Methods
 
-> 💡 In this section you can browse common Design Actions and **add** them to your Design Phase. You can also **create** your own!
+> 💡 In this section you can browse common Design Methods and **add** them to your Design Phase. You can also **create** your own!
 > It's also a great tool to **learn and discover new methods.**
 
-**Content:** the reusable catalog of Design Action templates. The two canonical ones (`Brief`, `Objectives`) live in `../actions/`. Add phase-specific methods here (interviews, workshops, usability tests, etc.) and copy them into the active Project Workflow when needed.
+**Content:** the reusable catalog of Design Method templates. The two canonical ones (`Brief`, `Objectives`) live in `../methods/`. Add phase-specific methods here (interviews, workshops, usability tests, etc.) and copy them into the active Project Workflow when needed.
 
 ---
 

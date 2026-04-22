@@ -2,17 +2,17 @@
 
 A Claude skill that lets product & UX designers kickstart and run end-to-end design projects using the **PRCSS\*** framework — a 7-phase, Double-Diamond-inspired workflow by Wojciech Pawlak (PRCSS*, Paris).
 
-Ask Claude for a project scaffold, a phase plan, or a single Design Action card, and you get back a clean Markdown deliverable that follows the PRCSS* conventions (phases, statuses, action card shape) — ready to paste into any tool (wiki, kanban, docs, Figma), with no tool lock-in.
+Ask Claude for a project scaffold, a phase plan, or a single Design Method card, and you get back a clean Markdown deliverable that follows the PRCSS* conventions (phases, statuses, method card shape) — ready to paste into any tool (wiki, kanban, docs, Figma), with no tool lock-in.
 
 ---
 
 ## What it gives you
 
-- A tracker-agnostic **project scaffold**: Project Info (Brief, Objectives, Stakeholders, Team, Metrics) + Project Workflow grouped by phase + reusable Design Actions library.
-- **Phase-level plans** with 3–6 recommended Design Actions each, drawn from the original PRCSS* method set.
-- **Canonical Design Actions preserved verbatim** from the source template: ✅ Brief and ✅ Objectives (steps, wording, structure).
-- An **interactive kickoff**: Claude asks 4 multiple-choice questions (Mode, Phase, Scope, Output) before producing anything, so you don't get a 2,000-word scaffold when you wanted a single action card.
-- Hooks into the rest of the `design:*` skill family (research synthesis, accessibility review, UX copy, design critique, developer handoff) while keeping PRCSS* phase/action tagging.
+- A tracker-agnostic **project scaffold**: Project Info (Brief, Objectives, Stakeholders, Team, Metrics) + Project Workflow grouped by phase + reusable Design Methods library.
+- **Phase-level plans** with 3–6 recommended Design Methods each, drawn from the original PRCSS* method set.
+- **Canonical Design Methods preserved verbatim** from the source template: ✅ Brief and ✅ Objectives (steps, wording, structure).
+- An **interactive kickoff**: Claude asks 4 multiple-choice questions (Mode, Phase, Scope, Output) before producing anything, so you don't get a 2,000-word scaffold when you wanted a single method card.
+- Hooks into the rest of the `design:*` skill family (research synthesis, accessibility review, UX copy, design critique, developer handoff) while keeping PRCSS* phase/method tagging.
 
 The 7 phases:
 
@@ -66,7 +66,7 @@ cp -R . ~/.claude/skills/prcss-product-design
 
 Once installed, any message that mentions PRCSS or a product design workflow triggers the skill. Claude opens with a single multiple-choice kickoff:
 
-> **Mode** — Full project scaffold / Brief + Objectives / Single phase plan / Single action card
+> **Mode** — Full project scaffold / Brief + Objectives / Single phase plan / Single method card
 > **Phase** — Discover / Define / Ideate / Design|Test|Deliver|Measure
 > **Scope** — Small (1–2 weeks) / Medium (1–2 months) / Large (quarter+)
 > **Output** — One Markdown file / Folder of Markdown files / Paste-ready snippet
@@ -78,17 +78,17 @@ Your answers decide which files Claude loads and what it produces.
 **1. Full project scaffold**
 > *Use PRCSS to scaffold a project to redesign the mobile checkout for a B2C marketplace. Deadline end of Q3.*
 
-Claude asks the 4 kickoff questions, then asks for context/brief, objectives, stakeholders, team, and KPIs. Outputs a Markdown project page with Project Info, a Project Workflow grouped by phase, and a seeded Design Actions library.
+Claude asks the 4 kickoff questions, then asks for context/brief, objectives, stakeholders, team, and KPIs. Outputs a Markdown project page with Project Info, a Project Workflow grouped by phase, and a seeded Design Methods library.
 
 **2. Phase-level plan**
 > *Give me a Discover plan for a B2B SaaS onboarding redesign.*
 
-Claude reads `references/phases/discover.md`, proposes 3–6 Design Actions (stakeholder interviews, desk research, heuristic audit…), and returns them as action cards ready to drop into your plan.
+Claude reads `references/phases/discover.md`, proposes 3–6 Design Methods (stakeholder interviews, desk research, heuristic audit…), and returns them as method cards ready to drop into your plan.
 
-**3. Single action card**
-> *Write me the Brief action for Project Atlas following PRCSS.*
+**3. Single method card**
+> *Write me the Brief method for Project Atlas following PRCSS.*
 
-Claude reads `references/actions/brief.md` (verbatim content from the original Notion template) and fills in the 6 steps with your project's specifics.
+Claude reads `references/methods/brief.md` (verbatim content from the original Notion template) and fills in the 6 steps with your project's specifics.
 
 **4. Non-trigger check**
 > *Explain OAuth.*
@@ -104,7 +104,6 @@ prcss-product-design/
 ├── SKILL.md                          # Skill entry point + kickoff logic
 ├── README.md                         # You are here
 ├── LICENSE                           # MIT — covers this skill packaging
-├── NOTICE                            # Attribution to PRCSS* (framework author)
 ├── references/
 │   ├── framework-overview.md         # 7 phases + rules + loop logic
 │   ├── project-template.md           # The canonical Project page structure
@@ -112,12 +111,13 @@ prcss-product-design/
 │   │   ├── discover.md · define.md · ideate.md
 │   │   ├── design.md · test.md · deliver.md
 │   │   └── measure.md
-│   └── actions/
-│       ├── brief.md                  # Verbatim from source
-│       └── objectives.md             # Verbatim from source
+│   └── methods/                      # Design Methods library (35 cards)
+│       ├── README.md                 # Index by phase
+│       ├── brief.md · objectives.md  # Canonical (verbatim from source)
+│       └── …                         # 33 more methods across the 7 phases
 └── templates/
     ├── project-skeleton.md           # Fill-in-the-blanks Markdown scaffold
-    └── action-card-template.md       # Shape of a Design Action card
+    └── method-card-template.md       # Shape of a Design Method card
 ```
 
 ---
@@ -126,16 +126,21 @@ prcss-product-design/
 
 - **Tracker-agnostic.** Outputs are plain Markdown — no Notion or Jira dependency. Paste where you like.
 - **Progressive disclosure.** `SKILL.md` stays under 3k words; detailed knowledge lives in `references/`. Claude only loads what the current mode needs.
-- **Preserve the original voice.** Callouts, section titles, and the two canonical actions (Brief, Objectives) are reproduced verbatim from the original PRCSS* template.
+- **Preserve the original voice.** Callouts, section titles, and the two canonical methods (Brief, Objectives) are reproduced verbatim from the original PRCSS* template.
 - **Loopable, not waterfall.** Phases are tags, not steps. The framework assumes Discover ↔ Define ↔ Ideate ↔ Test cycles.
 
 ---
 
 ## Credits
 
-Framework and skill by **Wojciech Pawlak (PRCSS\*)** — Paris. Version 0.3.0. Licensed MIT (see `LICENSE`).
+Framework and skill by **Wojciech Pawlak (PRCSS\*)** — Paris. Version 0.5.0. Licensed MIT (see `LICENSE`).
+
+> **v0.5.0 highlights**
+> - **Design Actions → Design Methods** rename (aligns with IDEO / NN/g vocabulary; the Notion source still uses "Actions").
+> - Tool-agnostic kickoff: works in Cowork (chips via `AskUserQuestion`) **and** claude.ai web / Claude Code (numbered Markdown list).
+> - Method card template adds a project-instance metadata block, numbered steps, and a feedback footer.
 
 ## Feedback
 
-- About the **framework** (methods, phases, actions): [prcss.design@gmail.com](mailto:prcss.design@gmail.com).
+- About the **framework** (phases, methods, conventions): [prcss.design@gmail.com](mailto:prcss.design@gmail.com).
 - About the **skill** (install, triggers, output format): open an issue on this repository.

@@ -5,9 +5,9 @@
 ## Intent
 Understand users, context, and the real problem before committing to any solution. This is the divergent phase of the first diamond — you are expanding what you know, not narrowing it.
 
-## Canonical actions (shipped with the template)
-- **✅ Brief** — document requirements, goals, constraints. See `../actions/brief.md`.
-- **Objectives** — define SMART product objectives. See `../actions/objectives.md`.
+## Canonical methods (shipped with the template)
+- **✅ Brief** — document requirements, goals, constraints. See `../methods/brief.md`.
+- **Objectives** — define SMART product objectives. See `../methods/objectives.md`.
 
 ## Typical methods to add to this phase
 - Stakeholder interviews
