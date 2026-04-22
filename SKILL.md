@@ -5,7 +5,7 @@ description: Kickstart and run a product design project using the PRCSS* framewo
 
 # PRCSS* — Product Design Project Framework
 
-> A 7-phase product design workflow packaged as a reusable project template. Framework originally published by PRCSS (Paris). Version 1.0. Contact: prcss.design@gmail.com.
+> A 7-phase product design workflow by Wojciech Pawlak (PRCSS\*, Paris), packaged as a reusable project template. Contact: prcss.design@gmail.com.
 
 This skill lets Claude help users scaffold, run, and document a product design project from brief to measurement using the PRCSS* logic. It is **tracker-agnostic** — outputs are plain Markdown the user can paste into any tool (wiki, docs, kanban, issue tracker) or keep as a folder of docs.
 
@@ -137,4 +137,4 @@ Always read the referenced file **before** generating content about the topic �
 
 ## Attribution
 
-Framework author: **PRCSS*** (Paris). Version 1.0. Contact for feedback: prcss.design@gmail.com. This skill reformats and preserves the framework's logic for use inside Claude; do not claim authorship of the underlying framework.
+Framework and skill by **Wojciech Pawlak (PRCSS\*)** — Paris. Licensed MIT. Contact for feedback: prcss.design@gmail.com.

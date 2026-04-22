@@ -1,6 +1,6 @@
 # PRCSS* — Product Design Skill for Claude
 
-A Claude skill that lets product & UX designers kickstart and run end-to-end design projects using the **PRCSS\*** framework — a 7-phase, Double-Diamond-inspired workflow originally published by [PRCSS (Paris)](mailto:prcss.design@gmail.com).
+A Claude skill that lets product & UX designers kickstart and run end-to-end design projects using the **PRCSS\*** framework — a 7-phase, Double-Diamond-inspired workflow by Wojciech Pawlak (PRCSS*, Paris).
 
 Ask Claude for a project scaffold, a phase plan, or a single Design Action card, and you get back a clean Markdown deliverable that follows the PRCSS* conventions (phases, statuses, action card shape) — ready to paste into any tool (wiki, kanban, docs, Figma), with no tool lock-in.
 
@@ -126,17 +126,16 @@ prcss-product-design/
 
 - **Tracker-agnostic.** Outputs are plain Markdown — no Notion or Jira dependency. Paste where you like.
 - **Progressive disclosure.** `SKILL.md` stays under 3k words; detailed knowledge lives in `references/`. Claude only loads what the current mode needs.
-- **Preserve the source voice.** Callouts, section titles, and the two canonical actions (Brief, Objectives) are reproduced verbatim — you can trace any output back to the PRCSS* Notion original.
+- **Preserve the original voice.** Callouts, section titles, and the two canonical actions (Brief, Objectives) are reproduced verbatim from the original PRCSS* template.
 - **Loopable, not waterfall.** Phases are tags, not steps. The framework assumes Discover ↔ Define ↔ Ideate ↔ Test cycles.
 
 ---
 
 ## Credits
 
-- **Framework:** [PRCSS\*](mailto:prcss.design@gmail.com) — Version 1.0, Made in Paris. The 7-phase workflow, the Design Actions concept, and the Brief / Objectives action contents are PRCSS*'s original work.
-- **Skill packaging:** This repository — licensed MIT (see `LICENSE`) — is a reformatting of the PRCSS* template into a Claude skill. It does not claim authorship of the underlying framework. See `NOTICE` for the full attribution statement.
+Framework and skill by **Wojciech Pawlak (PRCSS\*)** — Paris. Version 0.3.0. Licensed MIT (see `LICENSE`).
 
 ## Feedback
 
-- About the **framework itself** (methods, phases, actions): write to [prcss.design@gmail.com](mailto:prcss.design@gmail.com).
-- About the **skill packaging** (install, triggers, output format): open an issue on this repository.
+- About the **framework** (methods, phases, actions): [prcss.design@gmail.com](mailto:prcss.design@gmail.com).
+- About the **skill** (install, triggers, output format): open an issue on this repository.
