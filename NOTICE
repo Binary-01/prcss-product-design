@@ -1,0 +1,33 @@
+NOTICE — PRCSS* Framework Attribution
+======================================
+
+This Claude skill packages and reformats a product design framework authored
+and originally published by PRCSS (Paris), known as "PRCSS*".
+
+Original work:
+  - Title:   PRCSS* — Product Design Project Template, Version 1.0
+  - Author:  PRCSS (Paris)
+  - Contact: prcss.design@gmail.com
+  - Credit line from the source: "Made in Paris ❤️ By PRCSS*"
+
+The PRCSS* framework includes:
+  - The 7-phase model (Discover, Define, Ideate, Design, Test, Deliver, Measure)
+  - The Project Info / Project Workflow / Design Actions structure
+  - The Design Actions method library concept
+  - The canonical "Brief" and "Objectives" action contents, reproduced
+    verbatim in `references/actions/brief.md` and
+    `references/actions/objectives.md`
+
+What this repository adds:
+  - A Claude skill packaging (SKILL.md, kickoff logic, file layout)
+  - A tracker-agnostic Markdown rewrite (Notion-specific elements removed)
+  - Per-phase reference notes
+  - A project skeleton and action card template
+
+The skill packaging is licensed under the MIT License (see LICENSE).
+The PRCSS* framework itself is the work of its original author. Users who want
+to extend, translate, or redistribute the framework — as opposed to the skill
+packaging — should contact PRCSS directly at prcss.design@gmail.com.
+
+If you use this skill, please preserve this NOTICE file and the credit line
+in any derivative work.
