@@ -10,7 +10,7 @@ Ask Claude for a project scaffold, a phase plan, or a single Design Method card,
 
 - A tracker-agnostic **project scaffold**: Project Info (Brief, Objectives, Stakeholders, Team, Metrics) + Project Workflow grouped by phase + reusable Design Methods library.
 - **Phase-level plans** with 3–6 recommended Design Methods each, drawn from the original PRCSS* method set.
-- **Canonical Design Methods preserved verbatim** from the source template: ✅ Brief and ✅ Objectives (steps, wording, structure).
+- **Canonical Design Methods preserved verbatim** from the source template: More than 36 Design methods.
 - An **interactive kickoff**: Claude asks 4 multiple-choice questions (Mode, Phase, Scope, Output) before producing anything, so you don't get a 2,000-word scaffold when you wanted a single method card.
 - Hooks into the rest of the `design:*` skill family (research synthesis, accessibility review, UX copy, design critique, developer handoff) while keeping PRCSS* phase/method tagging.
 
