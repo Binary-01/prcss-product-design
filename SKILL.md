@@ -52,13 +52,9 @@ See `references/framework-overview.md` for detailed intent, outputs, and typical
 
 **Before doing any real work, Claude MUST frame the user's objective by asking the 4 questions below.** PRCSS\* covers a wide surface (scaffold, phase plan, single method, full roadmap) — picking the wrong mode wastes the user's time. Then read only the source-of-truth files relevant to the selected mode.
 
-**How to ask — tool-agnostic:**
+**How to ask:** Use the `ask_user_input_v0` tool to present the 4 questions as interactive chips. This tool is available in every Claude environment (Chat, Mac app, Cowork). Never use `AskUserQuestion` — it is Cowork-specific and causes a "Tool result could not be submitted" error in every other environment.
 
-- If the `AskUserQuestion` tool is available in the current environment (e.g. Cowork), send all four questions in a single `AskUserQuestion` call so they render as chips. Keep the labels and options short.
-- If `AskUserQuestion` is **not** available (e.g. claude.ai web chat, terminal Claude Code), ask the four questions inline as a short numbered Markdown list and wait for the user's answers before continuing.
-- **Never call `AskUserQuestion` blindly.** Check that it is present in the available-tools list first — otherwise the call times out and the user sees a generic "Tool result could not be submitted" error.
-
-The four questions (identical wording regardless of delivery mode):
+The four questions:
 
 1. **Mode** — *"What do you want to produce first?"*
    - `Full project scaffold` — The complete project page (Info + Workflow + Methods library). *Recommended for new projects.*

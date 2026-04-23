@@ -133,11 +133,13 @@ prcss-product-design/
 
 ## Credits
 
-Framework and skill by **Wojciech Pawlak (PRCSS\*)** — Paris. Version 0.5.0. Licensed MIT (see `LICENSE`).
+Framework and skill by **Wojciech Pawlak (PRCSS\*)** — Paris. Version 0.5.1. Licensed MIT (see `LICENSE`).
 
+> **v0.5.1 fix**
+> - Kickoff uses `ask_user_input_v0` (available in all Claude environments: Chat, app Mac, Cowork). `AskUserQuestion` is explicitly banned — it's Cowork-only and causes "Tool result could not be submitted" everywhere else.
+>
 > **v0.5.0 highlights**
 > - **Design Actions → Design Methods** rename (aligns with IDEO / NN/g vocabulary; the Notion source still uses "Actions").
-> - Tool-agnostic kickoff: works in Cowork (chips via `AskUserQuestion`) **and** claude.ai web / Claude Code (numbered Markdown list).
 > - Method card template adds a project-instance metadata block, numbered steps, and a feedback footer.
 
 ## Feedback
